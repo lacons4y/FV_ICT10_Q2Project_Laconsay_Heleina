@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Clubs | O.B. Montessori Center</title>
+
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+  <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+
+<body style="margin:0; font-family:Arial, Helvetica, sans-serif; background-color:#ffffff; color:#0a1f44;">
+
+    <nav style="background-color:#0a1f44; padding:16px 40px; display:flex; justify-content:space-between; align-items:center;">
+    <h1 style="color:#ffffff; font-size:22px; margin:0;">O.B. Montessori Center</h1>
+    <div>
+      <a href="index.html" style="color:#ffffff; text-decoration:none; margin-left:24px; font-size:15px;">Home</a>
+      <a href="schoolclubinfo.html" style="color:#ffffff; text-decoration:none; margin-left:24px; font-size:15px;">Clubs</a>
+      <a href="calculator.html" style="color:#ffffff; text-decoration:none; margin-left:24px; font-size:15px;">Grade Calculator</a>
+    </div>
+  </nav>
+  <section style="background:linear-gradient(135deg, #122b5c, #0a1f44); height:200px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; color:#ffffff;">
+    <h2 style="font-size:34px; margin-bottom:8px;">School Clubs</h2>
+    <p style="font-size:16px; opacity:0.9;">Explore student organizations and activities</p>
+  </section>
+
+  <section style="display:flex; justify-content:center; padding:60px 20px;">
+    <div style="background-color:#f4f6fa; border-radius:14px; padding:40px; width:500px; box-shadow:0 8px 20px rgba(0,0,0,0.08);">
+
+      <label style="font-size:16px; font-weight:bold; display:block; margin-bottom:10px;">
+        Select a club
+      </label>
+
+      <select id="club-select"
+        style="width:100%; padding:12px; margin-bottom:24px; border-radius:8px; border:2px solid #0a1f44; font-size:15px;">
+        <option value="Communication Arts Club">Communication Arts Club</option>
+        <option value="Dance Club">Dance Club</option>
+        <option value="Band Club">Band Club</option>
+        <option value="Glee Club">Glee Club</option>
+        <option value="Math Club">Math Club</option>
+        <option value="Science Club">Science Club</option>
+      </select>
+
+      <button py-click="clubinfo"
+        style="width:100%; background-color:#0a1f44; color:#ffffff; border:none; border-radius:10px; padding:14px; font-size:16px; font-weight:bold; cursor:pointer;">
+        Show Club Info
+      </button>
+
+      <pre id="club_info"
+        style="margin-top:24px; padding:16px; border-radius:10px; background-color:#ffffff; border:2px solid #0a1f44; min-height:100px; white-space:pre-wrap; font-size:14px;">
+      </pre>
+
+    </div>
+  </section>
+
+  <footer style="background-color:#0a1f44; color:#ffffff; text-align:center; padding:14px; font-size:13px;">
+    © 2025 O.B. Montessori Center. All rights reserved.
+  </footer>
+
+  <py-script src="main.py"></py-script>
+</body>
+</html>
